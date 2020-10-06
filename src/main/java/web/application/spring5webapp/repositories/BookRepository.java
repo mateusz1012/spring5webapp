@@ -1,4 +1,7 @@
 package web.application.spring5webapp.repositories;
 
-public interface BookRepository {
+import org.springframework.data.repository.CrudRepository;
+import web.application.spring5webapp.model.Book;
+
+public interface BookRepository extends CrudRepository<Book, Long> {
 }

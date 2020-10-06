@@ -1,4 +1,7 @@
 package web.application.spring5webapp.repositories;
 
-public interface AuthorRepository {
+import org.springframework.data.repository.CrudRepository;
+import web.application.spring5webapp.model.Author;
+
+public interface AuthorRepository extends CrudRepository<Author, Long> {
 }
